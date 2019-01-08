@@ -1,0 +1,373 @@
+body{
+    background-color: black;
+ font-family: 'Quicksand', sans-serif;
+    font-size: 1em;
+/*    background-color: black;*/
+/*    color: 404041*/
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.hw{
+    width: 100%;
+    height: auto;
+     background-color: white;
+}
+.fw{
+      width: 100%;
+    height: auto;
+}
+#container{
+    width: 1200px3;
+    height: auto;
+    margin: 0 auto;
+}
+header{
+    width: 1200px;
+    height: 200px;
+    margin: 0 auto;
+   padding: 10px;
+/*    border: 1px solid #000;*/
+}
+
+header .logo{
+    width: 140px;
+    height: 200px;
+    line-height: 200px;
+    float: left;
+/*    border: 1px solid #000;*/
+}
+header .logo img{
+cursor: pointer;
+}
+.clearfix:after{
+    clear: both;
+    display: block;
+    content: "";
+}
+header .title{
+    width: 600px;
+    height: 130px;
+    font-size: 100px;
+   font-family: 'Dynalight', cursive;
+    margin: 0 auto;
+    line-height: 130PX;
+    text-align: center;
+    cursor: pointer;
+/*    border: 1px solid #000;*/
+}
+nav .menu{
+    width: 600px;
+    height: 70px;
+/*    border: 1px solid #000;*/
+    margin: 0 auto;
+}
+nav .menu li{
+    float: left;
+    width: 150px;
+    height: 70px;
+    text-align: center;
+/*border: 1px solid #000;*/
+}
+nav .menu li>a{
+    
+    line-height: 70px;
+    display: block;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+}
+nav .menu li>a:hover{
+    font-size: 2rem;
+}
+.hamburger{
+    width: 200px;
+    height: 200px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+/*    border: 1px solid #000;*/
+}
+.hamburger img{
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+.main{
+    width: 1200px;
+    height: 700px;
+    margin: 0 auto;
+/*    border: 1px solid #000;*/
+}
+.main>.slide{
+    width: 100%;
+    height: 700px;
+    position: relative;
+    overflow: hidden;
+}
+.main .slide>img{
+    width: 100%;
+    height: 100%;
+background-size: cover;
+    position: absolute;
+}
+.sns{
+    width: 100%;
+    height: 300px;
+    background-color: #58585B;
+}
+.innersns{
+    width: 1200px;
+    height: 300px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.icon>i{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    border: 10px solid #fff;
+    border-radius: 50%;
+ float: left;
+    color: white;
+   margin: 0 20px;
+    font-size: 3rem;
+    cursor: pointer;
+}
+.icon>i:hover{
+    transform: rotateY(360deg);
+    transition: all 1s;
+}
+
+.icons{
+    width: 640px;
+    height: auto;
+  margin: 0 auto;
+    padding: 35px;
+/*    border: 1px solid #000;*/
+}
+.content1{
+    width: 100%;
+    height: 1000px;
+}
+h2{
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 30px;
+}
+.gallery{
+    width: 1200px;
+    height: 900px;
+    margin: 0 auto;
+     display: grid;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas: 
+        "item1 item2 item3 item4"
+        "item5 item2 item6 item4"
+        "item5 item7 item6 item8";
+}
+.item{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bg-hover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+}
+.item a{
+    font-size: 0;
+    text-align: center;
+    z-index: 10;
+    text-decoration: none;
+}
+.item:hover a{
+    font-size: 2.6rem;
+    color: #fff;
+}
+.item:hover .bg-hover{
+    opacity: 0.7;
+}
+.item-1{
+    grid-area: item1;
+    background: url(images/3.jpg) center no-repeat;
+    background-size: cover;
+}
+.item-2{
+    grid-area: item2;
+    background: url(images/28.jpg) center no-repeat;
+    background-size: cover;
+}
+.item-3{
+    grid-area: item3;
+    background: url(images/6.jpg) center no-repeat;
+    background-size: cover;
+}
+.item-4{
+    grid-area: item4;
+    background: url(images/7.jpg) center no-repeat;
+    background-size: cover;
+}
+.item-5{
+    grid-area: item5;
+    background: url(images/8.jpg) center no-repeat;
+    background-size: cover;
+}
+.item-6{
+    grid-area: item6;
+    background: url(images/9.jpg) center no-repeat;
+    background-size: cover;
+}
+.item-7{
+    grid-area: item7;
+    background: url(images/profile.jpg) center no-repeat;
+    background-size: cover;
+}
+.item-8{
+    grid-area: item8;
+    background: url(images/profile2.jpg) center no-repeat;
+    background-size: cover;
+}
+.banner{
+    width: 100%;
+    height: 300px;
+   background-color: #BBBDC0;
+background: url(images/de5.png) no-repeat center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+.banner>p{
+    text-decoration: underline;
+       color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.content2{
+    width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+}
+.contents{
+    width: 350px;
+    height: 300px;
+    float: left;
+    margin: 20px 25px;
+    cursor: pointer;
+   overflow: hidden;
+ 
+}
+.box{
+    width: 90px;
+    height:auto;
+    border: 1px solid #000;
+}
+.contents .button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 30px;
+    font-size: .875rem;
+    opacity: 0;
+  border: 1px solid #fff;
+}
+
+.contents:hover .button{
+    opacity: 1;
+    transition: all 1s;
+}
+.contents:hover .image1, .contents:hover .image2, .contents:hover .image3 {
+    transform: scale(1.2);
+    transition: all 2s;
+}
+
+.image1{
+    width: 100%;
+    height: 100%;
+      background: url(images/couple.jpg) no-repeat;
+    background-size: cover;
+    color: white;
+    font-size: 1.4rem;
+    display: flex;
+       justify-content: center;
+    align-items: center;
+  
+     
+}
+.image2{
+    width: 100%;
+     height: 100%;
+    background: url(images/profile3.jpg) no-repeat;
+     background-size: cover;
+      color: white;
+     font-size: 1.4rem;
+   text-align: center;
+      display: flex;
+       justify-content: center;
+    align-items: center;
+}
+.image3{
+    width: 100%;
+     height: 100%;
+    background: url(images/beauty.jpg) no-repeat;
+     background-size: cover;
+      color: white;
+     font-size: 1.4rem;
+   text-align: center;
+      display: flex;
+       justify-content: center;
+    align-items: center;
+   
+}
+.image3>p{
+     
+}
+
+.txts{
+    width: 100%;
+    height: auto;
+}
+.txts>p{
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+.fw{
+    width: 100%;
+    height: auto;
+    background-color: dimgrey;
+}
+footer{
+    width: 1200px;
+    height: 300px;
+    margin: 0 auto;
+    color: white;
+}
+footer .info{
+    text-align: center;
+}
+footer .info li{
+    float: left;
+    margin:  10px 20px;
+}
+footer p{
+    clear: both;
+    display: block;
+    text-align: center;
+}
