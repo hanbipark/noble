@@ -366,8 +366,12 @@ footer .info li{
     float: left;
     margin:  10px 20px;
 }
+.footer{
+   padding: 40px;
+}
 footer p{
     clear: both;
     display: block;
     text-align: center;
+    margin-top: 100px;
 }
